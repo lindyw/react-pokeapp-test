@@ -178,7 +178,7 @@ class Pokemon extends Component {
 		return (
 			<div>
 			<Header view={this.state.name}/>
-			<Card className="text-center mx-auto card" style= {{width:'50vh'}} border="warning">
+			<Card className="text-center mx-auto card h-100" style= {{width:'80vh'}} border="warning">
 			<Card.Body>
 				<Card.Title className="p-title">{this.state.name}</Card.Title>
 				<Card.Img variant="top" src={this.state.imageUrl} style= {{height:'25vh', width:'25vh'}}/>
@@ -196,11 +196,26 @@ class Pokemon extends Component {
 				<span>Defense: </span>
 				<ProgressBar striped variant="info" now={this.state.stats.defense} />
 				<span>Special Attack: </span>
-				<ProgressBar striped variant="info" now={this.state.stats.specialAttack} />
+				<ProgressBar striped variant="warning" now={this.state.stats.specialAttack} />
 				<span>Sepcial Defense: </span>
-				<ProgressBar striped variant="info" now={this.state.stats.specialDefense} />
-				<p className="p-description">{this.state.description}</p>
+				<ProgressBar striped variant="warning" now={this.state.stats.specialDefense} />
+				<br/>
+				<span className="p-description">{this.state.description}</span>
+				<hr />
+				{/* More Details */}
+				<Card.Title className="p-Title">More Details</Card.Title>
+				<Card.Text>
+						<b>Height: </b> {this.state.height} <br/>
+						<b>Egg Groups: </b> {this.state.eggGroups} <br/>
+						<b>Weight:</b> {this.state.weight} <br/>
+						<b>Hatch Steps:</b> {this.state.hatchSteps} <br/>
+						<b>Catch Rate:</b> {this.state.catchRate}% <br/>
+						<b>Abilities:</b> {this.state.abilities} <br/>
+						<b>Efforts:</b> {this.state.efforts}
+			
+				</Card.Text>
 			</Card.Body>
+				
 			</Card>
 			</div>
 	

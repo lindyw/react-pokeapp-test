@@ -4,14 +4,14 @@
 	min-height: 10vh;
 	background-color: #ffd01e;
 	height:11vh;
+
 }
 
 .container 
 {
 	display: block;
 	vertical-align:top;
-	min-width:100%;
-	max-width: 100%;
+	min-width: 100%;
 	max-height: 100px;
 	margin-right: auto;
 	margin-left: auto;

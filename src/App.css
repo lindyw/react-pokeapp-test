@@ -16,6 +16,7 @@ body {
 }
 
 .App-header {
+  mid-width:100%;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -38,11 +39,10 @@ body {
 .card span, .p-title{
   margin: 10px;
   font-family: Pokemon GB, sans-serif;
+
 }
 
 .p-description {
   padding-top: 10px;
-  font-size: 15px;
+  font-size: 10px;
 }
-
-
