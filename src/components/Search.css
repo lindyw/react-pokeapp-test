@@ -4,20 +4,30 @@
     background-color: #EEEEEE;
     border: 1px solid #DDDDDD;
     text-align: center;
+    line-height: 25px;
+}
+
+.searchList li:nth-child(even){
+	background:#ffd01e;
 }
 
 .searchList ul {
+	list-style: none;
+	max-height: 80%;
 	display:block;
 	width: 50%;
 	list-style:none;
 	padding:0;
+	overflow: auto;
+	height:40%;
 }
 
 input {
 	display:block;
 	width:100%;
 }
+
 .searchList {
-	display:flex;
-	justify-content: center;
+  display:flex;
+  justify-content: center;
 }

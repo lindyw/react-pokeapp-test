@@ -1,6 +1,6 @@
 import React, { Component }from 'react';
 import axios from 'axios';
- import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Search.css';
 // Components
 import Header from './Header';
@@ -28,6 +28,11 @@ export default class Search extends Component {
 
 	// JSX render
 	render() {
+		let filteredNames = this.state.pokemons.filter(
+				(pokemon) => {
+					return pokemon.name.indexOf(this.state.filter) !== -1;
+				}
+			)
 		return (
 			<React.Fragment>
 			<Header view="search"/>
@@ -35,7 +40,7 @@ export default class Search extends Component {
 				<div className="searchList">
 					<ul>
 					<input type="text" value={this.state.filter} placeholder="Filter by name" onChange={this.updateSearch.bind(this)}/>
-					{this.state.pokemons.map(pokemon => (
+					{filteredNames.map(pokemon => (
 						<PokemonList key={pokemon.name} name={pokemon.name} url={pokemon.url}/>
 					) 
 					)}
