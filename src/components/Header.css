@@ -1,13 +1,16 @@
 .navbar {
 	position:flex;
+	width:100%;
 	min-height: 10vh;
 	background-color: #ffd01e;
+	height:11vh;
 }
 
 .container 
 {
 	display: block;
 	vertical-align:top;
+	min-width:100%;
 	max-width: 100%;
 	max-height: 100px;
 	margin-right: auto;
@@ -15,6 +18,7 @@
 	padding-right: 10px;
 	padding-left: 10px;
 	float: left;
+	margin-bottom: 10px;
 }
 
 .app-logo {
@@ -41,7 +45,7 @@
 	padding: 3.5vh 10px;
 	padding-left:0;
     font-family: Fira Sans, sans-serif;
-	font-size: 2.5vh;
+	font-size: 1.8vh;
 }
 
 .header-ul {
@@ -56,6 +60,8 @@
 	    padding-right: 20px;
 	    padding-left: 20px;
 	    display: block;
+	    width:100%;
+	    min-width:100%;
 	}
 /*	.app-logo {
 	margin-top:5px;
@@ -65,6 +71,6 @@
 	.navtitle {
 	font-weight: 800;
 	font-size: 15px;
-	padding-top:18px;
+	padding-top:14px;
 }
 }

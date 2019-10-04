@@ -35,8 +35,14 @@ body {
   color: green;
 }
 
-.card {
+.card span, .p-title{
   margin: 10px;
+  font-family: Pokemon GB, sans-serif;
+}
+
+.p-description {
+  padding-top: 10px;
+  font-size: 15px;
 }
 
 
