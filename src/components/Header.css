@@ -35,7 +35,7 @@
 	padding:10px;
 }
 
-li {
+.header-li {
 	display: inline;
 	float:left;
 	padding: 3.5vh 10px;
@@ -44,7 +44,7 @@ li {
 	font-size: 2.5vh;
 }
 
-ul {
+.header-ul {
   list-style-type: none;
   margin: 0;
   padding-left:1.5vh;

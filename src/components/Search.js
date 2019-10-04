@@ -1,28 +1,51 @@
 import React, { Component }from 'react';
 import axios from 'axios';
+ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './Search.css';
 // Components
 import Header from './Header';
+import PokemonList from './PokemonList';
 
-class Search extends Component {
+export default class Search extends Component {
 
 	// state
 	state = {
-		pokeSearch: '',
-		onLoad: false,
-		data: {}
+		url: 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=964',
+		pokemons: [],
+		filter: "",
 	};
 
+	async componentDidMount() {
+		const res = await axios.get(this.state.url);
+		// 
+		this.setState({pokemons: res.data['results']});
+		
+	}
+
+	updateSearch(event) {
+		this.setState({filter: event.target.value.substr(0,20)});
+	}
 
 	// JSX render
 	render() {
 		return (
-			<div>
-				<Header view="search"/>
-				<h1>Search page</h1>
-			</div>
-		)
+			<React.Fragment>
+			<Header view="search"/>
+			{this.state.pokemons ? (
+				<div className="searchList">
+					<ul>
+					<input type="text" value={this.state.filter} placeholder="Filter by name" onChange={this.updateSearch.bind(this)}/>
+					{this.state.pokemons.map(pokemon => (
+						<PokemonList key={pokemon.name} name={pokemon.name} url={pokemon.url}/>
+					) 
+					)}
+					</ul>
+				</div>
+				) : (
+					<h1>Loading Pokemons</h1>
+			)}
+			
+			</React.Fragment>
+		);
 	}
 }
-
-export default Search;

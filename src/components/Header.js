@@ -12,7 +12,7 @@ class Header extends React.Component {
     }
     else if (this.props.view === "search")
     {
-      return <li>> <Link to="/search">Search</Link></li>
+      return <li className="header-li">> <Link to="/search">Search</Link></li>
     }
   }
 
@@ -28,8 +28,8 @@ class Header extends React.Component {
               />
             <div className="nav-links">
               {/*<h2 className="navtitle">PokiSearch App</h2>*/}
-              <ul>
-            	  <li>
+              <ul className="header-ul">
+            	  <li className="header-li">
                   <Link to="/">PokeApp</Link>
                 </li>
                   {this.renderBody()}

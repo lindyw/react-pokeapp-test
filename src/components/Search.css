@@ -1,0 +1,23 @@
+.searchList li {
+	display:block;
+    padding:5px 10px;
+    background-color: #EEEEEE;
+    border: 1px solid #DDDDDD;
+    text-align: center;
+}
+
+.searchList ul {
+	display:block;
+	width: 50%;
+	list-style:none;
+	padding:0;
+}
+
+input {
+	display:block;
+	width:100%;
+}
+.searchList {
+	display:flex;
+	justify-content: center;
+}
