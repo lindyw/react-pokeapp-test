@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
-class Header extends React.Component {
+ class Header extends React.Component {
 
   // Methods
   renderBody = () => {
@@ -12,7 +12,11 @@ class Header extends React.Component {
     }
     else if (this.props.view === "search")
     {
-      return <li className="header-li">> <Link to="/search">Search</Link></li>
+      return <li className="header-li">> <Link to="/search">Pokemon</Link></li>
+    }
+    else 
+    {
+       return <li className="header-li">> <Link to="/search">Pokemon</Link> > {this.props.view}</li>
     }
   }
 
@@ -22,12 +26,11 @@ class Header extends React.Component {
         <div className="container">
           <div className="nav-menu w-clearfix">
               <img
-                src="header_icon.png"
+                src="https://github.com/lindyw/react-pokeapp-test/blob/master/public/header_icon.png?raw=true"
                 alt="pokemon search web app"
                 className="app-logo"
               />
             <div className="nav-links">
-              {/*<h2 className="navtitle">PokiSearch App</h2>*/}
               <ul className="header-ul">
             	  <li className="header-li">
                   <Link to="/">PokeApp</Link>
@@ -42,5 +45,4 @@ class Header extends React.Component {
       );
     };
 }
-
 export default Header;

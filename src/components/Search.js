@@ -1,12 +1,13 @@
 import React, { Component }from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './Search.css';
 // Components
 import Header from './Header';
 import PokemonList from './PokemonList';
 
-export default class Search extends Component {
+ class Search extends Component {
 
 	// state
 	state = {
@@ -28,6 +29,7 @@ export default class Search extends Component {
 
 	// JSX render
 	render() {
+		// Return filtered results
 		let filteredNames = this.state.pokemons.filter(
 				(pokemon) => {
 					return pokemon.name.indexOf(this.state.filter) !== -1;
@@ -35,22 +37,26 @@ export default class Search extends Component {
 			)
 		return (
 			<React.Fragment>
-			<Header view="search"/>
-			{this.state.pokemons ? (
-				<div className="searchList">
-					<ul>
-					<input type="text" value={this.state.filter} placeholder="Filter by name" onChange={this.updateSearch.bind(this)}/>
-					{filteredNames.map(pokemon => (
-						<PokemonList key={pokemon.name} name={pokemon.name} url={pokemon.url}/>
-					) 
-					)}
-					</ul>
-				</div>
-				) : (
-					<h1>Loading Pokemons</h1>
-			)}
+
+				<Header view="search"/>
+				{this.state.pokemons ? (
+					<div className="searchList">
+						<ul>
+							<input type="text" value={this.state.filter} placeholder="Filter by name" 
+							onChange={this.updateSearch.bind(this)}/>
+							{filteredNames.map(pokemon => (
+
+								<PokemonList key={pokemon.name} name={pokemon.name} url={pokemon.url}/>
+							) 
+							)}
+						</ul>
+					</div>
+					) : (
+						<h1>Loading Pokemons</h1>
+				)}
 			
 			</React.Fragment>
 		);
 	}
 }
+export default Search;

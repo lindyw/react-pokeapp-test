@@ -5,6 +5,7 @@
     border: 1px solid #DDDDDD;
     text-align: center;
     line-height: 25px;
+    margin:5px;
 }
 
 .searchList li:nth-child(even){
@@ -15,7 +16,7 @@
 	list-style: none;
 	max-height: 80%;
 	display:block;
-	width: 50%;
+	width: 80%;
 	list-style:none;
 	padding:0;
 	overflow: auto;
@@ -28,6 +29,7 @@ input {
 }
 
 .searchList {
-  display:flex;
-  justify-content: center;
+  display:block;
+  margin-left: 10%;
+  width:100%;
 }

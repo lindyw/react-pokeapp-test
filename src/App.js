@@ -5,15 +5,16 @@ import './App.css';
 // import Components
 import Welcome from './components/Welcome';
 import Search from './components/Search';
-
+import Pokemon from './components/Pokemon'
 class App extends Component {
   render(){
     return (
          
           <Router>
                 <Switch>
-                <Route exact path="/" component={Welcome} />
-                <Route path="/search" component={Search}/>  
+                  <Route exact path="/" component={Welcome} />
+                  <Route exact path="/search" component={Search} />  
+                  <Route exact path="/pokemon/:index" component={Pokemon}/>
                 </Switch>
           </Router>
   
