@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 
-const styledLink = styled(Route)`
+// try using styled-components 
+const styledLink = styled(Link)`
 		text-decoration: none;
 		color:black;
 		&:foucs,
@@ -19,23 +19,21 @@ const styledLink = styled(Route)`
 
 	state = {
 		name: '',
-		imageUrl: '',
 		index: ''
 	}
 
 	componentDidMount() {
 		const { name, url } = this.props;
 		const index = url.split('/')[url.split('/').length - 2];
-		const imageUrl = `https//github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${index}.png`;
+		
 
 		this.setState({
-			name, imageUrl, index
+			name, index
 		})
 		
 		
 	}
 	render() {
-		const { name, url } = this.props;
 		
 		return (
 			<li>

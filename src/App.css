@@ -34,18 +34,9 @@ body {
   textDecoration: none; 
   color: green;
 }
-/*.bg-block {
-   width:100%;
-   height:100%;
-   position: absolute;
-   left: 0%;
-   top: 0%;
-   right: 0%;
-   bottom: auto;
-   z-index: -1;
-   display: block;
-   overflow: hidden;
-   background-color: #888888;
-}*/
+
+.card {
+  margin: 10px;
+}
 
 
