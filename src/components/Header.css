@@ -1,0 +1,70 @@
+.navbar {
+	position:flex;
+	min-height: 10vh;
+	background-color: #ffd01e;
+}
+
+.container 
+{
+	display: block;
+	vertical-align:top;
+	max-width: 100%;
+	max-height: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+	float: left;
+}
+
+.app-logo {
+	width:10vh;
+	height:10vh;
+}
+
+.nav-links
+{
+	display: inline-block;
+	position:absolute;
+	white-space:nowrap;
+}
+
+.navtitle {
+	font-weight: 800;
+	font-size: 25px;
+	padding:10px;
+}
+
+li {
+	display: inline;
+	float:left;
+	padding: 3.5vh 10px;
+	padding-left:0;
+    font-family: Fira Sans, sans-serif;
+	font-size: 2.5vh;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left:1.5vh;
+}
+
+
+@media (max-width: 768px min-width: 400px) {
+	.container {
+	    padding-right: 20px;
+	    padding-left: 20px;
+	    display: block;
+	}
+/*	.app-logo {
+	margin-top:5px;
+	width:60px;
+	height:60px;
+}*/
+	.navtitle {
+	font-weight: 800;
+	font-size: 15px;
+	padding-top:18px;
+}
+}
