@@ -31,7 +31,7 @@ class Header extends React.Component {
               />
             <div className="nav-links">
               <ul className="header-ul">
-            	  <li className="header-li">
+                <li className="header-li">
                   <Link to="/">PokeApp</Link>
                 </li>
                   {this.renderBody()}
@@ -41,6 +41,8 @@ class Header extends React.Component {
           </div>
         </div>
       </nav>
+
+      
       );
     };
 }

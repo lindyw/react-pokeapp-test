@@ -6,24 +6,24 @@ import Header from './Header'
 
 
 const TYPE_COLORS = {
-	bug: '#B1C12E',
-  	dark: '#4F3A2D',
-  	dragon: '#755EDF',
-  	electric: '#FCBC17',
-  	fairy: '#F4B1F4',
-  	fighting: '#823551D',
-  	fire: '#E73B0C',
-  	flying: '#A3B3F7',
-  	ghost: '#6060B2',
-  	grass: '#74C236',
-  	ground: '#D3B357',
-  	ice: '#A3E7FD',
-  	normal: '#C8C4BC',
-  	poison: '#934594',
-  	psychic: '#ED4882',
-  	rock: '#B9A156',
-  	steel: '#B5B5C3',
-  	water: '#3295F6'
+	bug: 'success',
+  	dark: 'dark',
+  	dragon: 'info',
+  	electric: 'warning',
+  	fairy: 'info',
+  	fighting: 'secondary',
+  	fire: 'danger',
+  	flying: 'primary',
+  	ghost: 'light',
+  	grass: 'success',
+  	ground: 'dark',
+  	ice: 'primary',
+  	normal: 'secondary',
+  	poison: 'danger',
+  	psychic: 'warning',
+  	rock: 'secondary',
+  	steel: 'secondary',
+  	water: 'primary'
 }
 
 class Pokemon extends Component {
@@ -88,7 +88,9 @@ class Pokemon extends Component {
  				case 'special-defense':
  					specialDefense = stat['base_stat'];
  					break;
+ 				default: break;
  			}
+ 			return null;
  		});
 
  		const height = pokemonData.data['height'] + " dm";
@@ -146,8 +148,9 @@ class Pokemon extends Component {
  				if(flavor.language.name === 'en') {
  						description = flavor.flavor_text;
  						description = description.replace('\f',' '); // fix the display error
- 						return;
+ 						return null;
  				}
+ 				return null;
  			});
 
  		// Capture_rate: the base rate is up to 255, round it back to 0-100
@@ -180,7 +183,7 @@ class Pokemon extends Component {
 			<Header view={this.state.name}/>
 			<Card className="text-center mx-auto card h-100" style= {{width:'80vh'}} border="warning">
 			<Card.Body>
-				<Card.Title className="p-title">{this.state.name}</Card.Title>
+				<Card.Title className="p-title" >{this.state.name}</Card.Title>
 				<Card.Img variant="top" src={this.state.imageUrl} style= {{height:'25vh', width:'25vh'}}/>
 				<br/>
 				<Card.Text style= {{padding:'15px'}}>
@@ -192,13 +195,13 @@ class Pokemon extends Component {
 				<span>HP: </span>
 				<ProgressBar striped variant="danger" now={this.state.stats.hp} />
 				<span>Attack: </span>
-				<ProgressBar striped variant="info" now={this.state.stats.attack} />
+				<ProgressBar striped variant={this.state.typeColor} now={this.state.stats.attack} />
 				<span>Defense: </span>
-				<ProgressBar striped variant="info" now={this.state.stats.defense} />
+				<ProgressBar striped variant={this.state.typeColor} now={this.state.stats.defense} />
 				<span>Special Attack: </span>
-				<ProgressBar striped variant="warning" now={this.state.stats.specialAttack} />
+				<ProgressBar striped variant={this.state.typeColor} now={this.state.stats.specialAttack} />
 				<span>Sepcial Defense: </span>
-				<ProgressBar striped variant="warning" now={this.state.stats.specialDefense} />
+				<ProgressBar striped variant={this.state.typeColor} now={this.state.stats.specialDefense} />
 				<br/>
 				<span className="p-description">{this.state.description}</span>
 				<hr />
