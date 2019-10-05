@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d5f1467c7a13f52861afc75acccfbcea",
+    "revision": "c5037282f9910f841e14c152b1bd3081",
     "url": "/react-pokeapp-test/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-pokeapp-test/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "948a4b6c1c95b21e1c2b",
-    "url": "/react-pokeapp-test/static/css/main.61086156.chunk.css"
+    "revision": "04dffd0257e221d73436",
+    "url": "/react-pokeapp-test/static/css/main.a590712d.chunk.css"
   },
   {
     "revision": "23fd2504e05b179d4e7b",
     "url": "/react-pokeapp-test/static/js/2.b2ab8d3a.chunk.js"
   },
   {
-    "revision": "948a4b6c1c95b21e1c2b",
-    "url": "/react-pokeapp-test/static/js/main.5ba9b5c0.chunk.js"
+    "revision": "04dffd0257e221d73436",
+    "url": "/react-pokeapp-test/static/js/main.7f0b842f.chunk.js"
   },
   {
     "revision": "7543382fdb654ae4b22c",
