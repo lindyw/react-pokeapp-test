@@ -20,7 +20,9 @@ class Search extends Component {
 	}
 
 	updateSearch(event) {
-		this.setState({ filter: event.target.value.substr(0, 20) });
+		this.setState({
+			filter: event.target.value.substr(0, 20).toLowerCase()
+		});
 	}
 
 	// JSX render
