@@ -1,5 +1,5 @@
 # PokeApp written in ReactJS (v16.10.1) by Woon Him (Lindy) Wong
-Deployed PokeApp webapp is running here: https://lindyw.github.io/react-pokeapp-test/
+**PokeApp webapp is lively running here:** https://lindyw.github.io/react-pokeapp-test/
 
 ## 1. How to run this webapp in localhost?
 
