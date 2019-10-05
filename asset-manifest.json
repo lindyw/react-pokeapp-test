@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-pokeapp-test/static/css/main.61086156.chunk.css",
+    "main.js": "/react-pokeapp-test/static/js/main.aa91688a.chunk.js",
+    "main.js.map": "/react-pokeapp-test/static/js/main.aa91688a.chunk.js.map",
+    "runtime-main.js": "/react-pokeapp-test/static/js/runtime-main.ef5b4310.js",
+    "runtime-main.js.map": "/react-pokeapp-test/static/js/runtime-main.ef5b4310.js.map",
+    "static/css/2.0624914a.chunk.css": "/react-pokeapp-test/static/css/2.0624914a.chunk.css",
+    "static/js/2.b2ab8d3a.chunk.js": "/react-pokeapp-test/static/js/2.b2ab8d3a.chunk.js",
+    "static/js/2.b2ab8d3a.chunk.js.map": "/react-pokeapp-test/static/js/2.b2ab8d3a.chunk.js.map",
+    "index.html": "/react-pokeapp-test/index.html",
+    "precache-manifest.ddebd9abcb4e85a2461d9f36b13ea179.js": "/react-pokeapp-test/precache-manifest.ddebd9abcb4e85a2461d9f36b13ea179.js",
+    "service-worker.js": "/react-pokeapp-test/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/react-pokeapp-test/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.61086156.chunk.css.map": "/react-pokeapp-test/static/css/main.61086156.chunk.css.map",
+    "static/media/PokemonGB.ttf": "/react-pokeapp-test/static/media/PokemonGB.831e1f4d.ttf",
+    "static/media/App.css": "/react-pokeapp-test/static/media/bg.bc55a789.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef5b4310.js",
+    "static/css/2.0624914a.chunk.css",
+    "static/js/2.b2ab8d3a.chunk.js",
+    "static/css/main.61086156.chunk.css",
+    "static/js/main.aa91688a.chunk.js"
+  ]
+}
