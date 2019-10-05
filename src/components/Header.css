@@ -4,6 +4,7 @@
 	min-height: 10vh;
 	background-color: #ffd01e;
 	height:11vh;
+	top:0;
 
 }
 
@@ -34,7 +35,7 @@
 	display: inline-block;
 	position:fixed;
 	white-space:nowrap;
-	left:10%;
+	left:10vh;
 	top:1%;
 }
 

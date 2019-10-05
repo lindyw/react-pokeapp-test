@@ -14,7 +14,7 @@
 }
 
 .searchList ul {
-	list-style: none;
+	margin-top: 12vh;
 	max-height: 80%;
 	display:block;
 	list-style:none;
@@ -33,7 +33,7 @@ input {
 }
 
 .searchList {
-  	display:block;
+  	display:contents;
   	width:100%;
   	padding-left:15%;
 }

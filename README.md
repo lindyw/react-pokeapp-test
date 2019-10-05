@@ -1,5 +1,15 @@
-### How to deploy and run the project?
+### PokeApp written in ReactJS (v16.10.1) by Woon Him (Lindy) Wong
+Deployed PokeApp webapp is running here: https://lindyw.github.io/react-pokeapp-test/
 
+### How to run this webapp in localhost?
+
+1. Open your Command Prompt.
+
+2. Change the current working directory to the location where you want the cloned directory to be made. (i.e. cd {path})
+
+3. Type `git clone https://github.com/lindyw/react-pokeapp-test.git`
+
+4. Now `cd {your local clone path}` and type:
 
 ### `npm start`
 
@@ -9,43 +19,50 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `npm test`
+### How to deploy this webapp (in GitHub Pages)?
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prerequisites:
 
-### `npm run build`
+` - GitHub Account.
+  - Install Git in your machine and set up Git.
+  - Make sure you have install [Node.js] and [Npm] in your machine.`
+  - *We need to install GitHub Pages package as a dev-dependency.
+	
+	type `cd {cloned local repository path}`
+		 `npm install gh-pages --save-dev`
+	
+	P.S. Once installed gh-pages, I recommand you to restart the Command Prompt again for the following step. 
+	
+  
+## Procedure:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Add properties to `package.json` file.
+   - Add `"homepage": "https://{username}.github.io/{repo-name}"`
+   - Add `"predeploy": "npm run build",
+		  "deploy": "gh-pages -d build"` under `scripts` property
+   - Save `package.json`.
+   
+   ![Like this](readme_img_1.JPG)
+   
+2. Create a Github repository and initalize it and add it as a remote in your local cloned git repository.
+	
+	open up yor Command Prompt and type,
+	- `git init`
+	- add it as remote `git remote add origin [repository url]`
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+3. Now you can deploy it to GitHub Pages!
+   
+   just run the follow command:
+   `npm run deploy`
+   
+ Enjoy!
+ 
+ ### github pages - Official Documentations
+ 
+ https://create-react-app.dev/docs/deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
