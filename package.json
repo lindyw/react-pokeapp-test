@@ -2,6 +2,7 @@
   "name": "pokemon-search-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lindyw.github.io/react-pokeapp-test/",
   "dependencies": {
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
@@ -15,7 +16,9 @@
     "styled-components": "^4.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+	"start": "react-scripts start",
+	"predeploy": "npm run build",
+	"deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -36,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "prettier": "1.18.2"
   }
 }

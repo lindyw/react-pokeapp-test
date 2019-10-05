@@ -1,5 +1,5 @@
-.navbar {
-	position:flex;
+.nav-bar {
+	position:fixed;
 	width:100%;
 	min-height: 10vh;
 	background-color: #ffd01e;
@@ -22,6 +22,9 @@
 }
 
 .app-logo {
+	position:fixed;
+	left:0;
+	top:0;
 	width:10vh;
 	height:10vh;
 }
@@ -29,8 +32,10 @@
 .nav-links
 {
 	display: inline-block;
-	position:absolute;
+	position:fixed;
 	white-space:nowrap;
+	left:10%;
+	top:1%;
 }
 
 .navtitle {

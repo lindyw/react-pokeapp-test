@@ -23,7 +23,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <nav className="navbar w-nav">
+      <nav className="nav-bar">
         <div className="container">
           <div className="nav-menu w-clearfix">
             <img

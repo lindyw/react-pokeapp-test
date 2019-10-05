@@ -196,11 +196,11 @@ class Pokemon extends Component {
 				<Header view={this.state.name} />
 				<Card
 					className="text-center mx-auto card h-100"
-					style={{ width: "80vh" }}
+					style={{ width: "min-content", position: "inherit" }}
 					border="warning"
 				>
 					<Card.Body>
-						<Card.Title className="p-title">
+						<Card.Title className="p-title p-text">
 							{this.state.name}
 						</Card.Title>
 						<Card.Img
@@ -210,53 +210,53 @@ class Pokemon extends Component {
 						/>
 						<br />
 						<Card.Text style={{ padding: "15px" }}>
-							<span>Types: </span>
+							<span className="p-text">Types: </span>
 							{this.state.types.map(type => (
 								<span
 									key={type}
-									className="badge badge-pill badge-primary mr-1"
+									className="badge badge-pill badge-primary mr-1 p-text"
 								>
 									{type}
 								</span>
 							))}
 						</Card.Text>
-						<span>HP: </span>
+						<span className="p-text">HP: </span>
 						<ProgressBar
 							striped
 							variant="danger"
 							now={this.state.stats.hp}
 						/>
-						<span>Attack: </span>
+						<span className="p-text">Attack: </span>
 						<ProgressBar
 							striped
 							variant={this.state.typeColor}
 							now={this.state.stats.attack}
 						/>
-						<span>Defense: </span>
+						<span className="p-text">Defense: </span>
 						<ProgressBar
 							striped
 							variant={this.state.typeColor}
 							now={this.state.stats.defense}
 						/>
-						<span>Special Attack: </span>
+						<span className="p-text">Special Attack: </span>
 						<ProgressBar
 							striped
 							variant={this.state.typeColor}
 							now={this.state.stats.specialAttack}
 						/>
-						<span>Sepcial Defense: </span>
+						<span className="p-text">Sepcial Defense: </span>
 						<ProgressBar
 							striped
 							variant={this.state.typeColor}
 							now={this.state.stats.specialDefense}
 						/>
 						<br />
-						<span className="p-description">
+						<span className="p-description p-text">
 							{this.state.description}
 						</span>
 						<hr />
 						{/* More Details */}
-						<Card.Title className="p-Title">
+						<Card.Title className="p-title">
 							More Details
 						</Card.Title>
 						<Card.Text>
