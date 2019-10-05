@@ -1,7 +1,7 @@
-### PokeApp written in ReactJS (v16.10.1) by Woon Him (Lindy) Wong
+# PokeApp written in ReactJS (v16.10.1) by Woon Him (Lindy) Wong
 Deployed PokeApp webapp is running here: https://lindyw.github.io/react-pokeapp-test/
 
-### How to run this webapp in localhost?
+## 1. How to run this webapp in localhost?
 
 1. Open your Command Prompt.
 
@@ -19,22 +19,23 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### How to deploy this webapp (in GitHub Pages)?
+## 2. How to deploy this webapp (in GitHub Pages)?
 
-## Prerequisites:
+### Prerequisites:
 
-` - GitHub Account.
+  - GitHub Account.
   - Install Git in your machine and set up Git.
-  - Make sure you have install [Node.js] and [Npm] in your machine.`
+  - Make sure you have install [Node.js] and [Npm] in your machine.
   - *We need to install GitHub Pages package as a dev-dependency.
 	
 	type `cd {cloned local repository path}`
+	
 		 `npm install gh-pages --save-dev`
 	
 	P.S. Once installed gh-pages, I recommand you to restart the Command Prompt again for the following step. 
 	
   
-## Procedure:
+### Procedure:
 
 1. Add properties to `package.json` file.
    - Add `"homepage": "https://{username}.github.io/{repo-name}"`
